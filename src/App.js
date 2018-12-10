@@ -1,11 +1,15 @@
 import React from 'react';
+import Header from './header/Header';
+import Main from './main/Main';
+
 
 const App = () => {
   return (
     <div>
-      <h1>Sweet Pumpkins</h1>
+      <Header />
+      <Main />
     </div>
-  )
-}
+  );
+};
 
 export default App;
