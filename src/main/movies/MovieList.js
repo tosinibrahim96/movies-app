@@ -1,12 +1,11 @@
 import React from 'react';
-import './MovieListItem.css';
+import './MovieList.css';
 
-const MovieListItem = ({movie}) => {
+const MovieList = ({movie})=>{
    const { title, poster_path, release_date, vote_average } = movie;
    const imgUrl = `https://image.tmdb.org/t/p/w342/${poster_path}`;
-   const year = release_date.substring(0, 4);
-
-   return (
+   
+   return(
       <li className="movie-item">
          <img src={imgUrl} alt={title} />
          <div className="movie-description">
@@ -14,7 +13,7 @@ const MovieListItem = ({movie}) => {
             <section className="movie-details">
                <div className="movie-year">
                   <span className="title">Year</span>
-                  <span>{year}</span>
+                  <span>{release_date}</span>
                </div>
                <div className="movie-rating">
                   <span className="title">Rating</span>
@@ -26,5 +25,4 @@ const MovieListItem = ({movie}) => {
    );
 }
 
-
-export default MovieListItem;
+export default MovieList;

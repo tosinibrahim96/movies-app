@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
-import Navigation from './navigation/Navigation';
+import React, { Component } from 'react';
+import './main.css';
 import Movies from './movies/Movies';
-import './Main.css';
+import Navigation from './navigation/Navigation';
 
-
-export default class Main extends Component {
-  render() {
-    return (
-      <section className='main'>
-         <Navigation />
-         <Movies />
-      </section>
-    )
-  }
+class Main extends Component {
+   render() {
+      return (
+         <section className="main">
+            <Navigation />
+            <Movies />
+         </section>
+      )
+   }
 }
+
+export default Main;
